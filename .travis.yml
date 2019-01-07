@@ -4,6 +4,10 @@ sudo: false
 python:
   - 3.5
 
+install:
+  - python -m pip install --upgrade pip coveralls
+  - python -m pip install -r etc/requirements.txt
+
 script:
   - nosetests tests
 
