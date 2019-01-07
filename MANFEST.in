@@ -1,0 +1,4 @@
+# 用来包含非py文件给 setup（本地安装使用）
+include LICENSE
+
+include etc/requirements*.txt

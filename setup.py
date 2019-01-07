@@ -5,6 +5,10 @@ from setuptools import (
     setup,
 )
 
+####################################
+# 这个文件是本地安装用的，跟CI无关 #
+####################################
+
 classifiers = [
     "Development Status :: 4 - Beta",
     "Programming Language :: Python",
@@ -25,6 +29,7 @@ if __name__ == '__main__':
         # cmdclass=get_cmdclass(),
         version='0.0.1',
         author=__author__,
+        long_description='long disp in setup.py',
         license=LICENSE,
         classifiers=classifiers,
         packages=['my_pkg'],
