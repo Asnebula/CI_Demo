@@ -4,6 +4,7 @@ __author__ = 'Wangshuo5'
 from setuptools import (
     setup,
 )
+import versioneer
 
 ####################################
 # 这个文件是本地安装用的，跟CI无关 #
@@ -26,8 +27,8 @@ LICENSE = "Apache License, Version 2.0"
 if __name__ == '__main__':
     setup(
         name='demo',
-        # cmdclass=get_cmdclass(),
-        version='0.0.1',
+        cmdclass=versioneer.get_cmdclass(),
+        version=versioneer.get_version(),
         author=__author__,
         long_description='long disp in setup.py',
         license=LICENSE,
