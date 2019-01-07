@@ -9,7 +9,7 @@ install:
   - python -m pip install -r etc/requirements.txt
 
 script:
-  - nosetests tests
+  - nosetests test
 
 branches:
   only:
